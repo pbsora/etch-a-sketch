@@ -1,55 +1,201 @@
 body{
+  background-color: rgb(26, 25, 25);
+}
 
-    background-color: rgb(26, 25, 25);
-    display: flex;
-    justify-content: center;
+#things{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
 
+}
+
+h1{
+  color: white;
+  text-align: center;
+  font-size: 70px;
+  font-family: 'Lobster'
 }
 
 
 #card{
-
-    background-color: rgb(245, 239, 239);
-    width: 900px;
-    height: 900px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px;
-    
-
+  background-color: rgb(245, 239, 239);
+  width: 900px;
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
 }
 
 #container{
+  width: 800px;
+  height: 800px;
+  border: 3px solid black;
+  display: flex;
+}
 
-    width: 800px;
-    height: 800px;
-    border: 3px solid black;
-    
-    
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 0 100%;
+  padding: 0%;
+  justify-content: stretch;
+  align-items: stretch;
+}
+.cell {
+   /* center the cell content */
+  justify-content: center;
+  align-items: center;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  background: white;
+  outline: 1px black solid;
+}
+
+#usables{
+  margin-left: 100px;
+  gap: 50px;
+  width: 300px;
+  background-color: rgb(43, 40, 40);
+  border-radius: 30px;
 
 }
 
 
-  .grid {
-    display: flex;
-    flex-wrap: wrap;
-    flex: 0 0 ;
-    padding: 0%;
-    
-    
-    
-    
-  }
-  .cell {
-     /* center the cell content */
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    font-family: Arial;
-    font-size: 15px;
-    font-weight: bold;
-    background: white;
-    border: 0.5px black solid;
-    
-  }
+button{
+  background-color: #be1515;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: monospace;
+  font-size: 18px;
+  font-weight: bold;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 150px;
+  height: 50px;
+  margin-top: 20px;
+  margin-left: 70px;
+}
+
+
+button:hover,
+button:focus {
+  background-color: #742323;
+}
+
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-left: 20px;
+
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #ec1010;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+#rgb{
+  color: black;
+  width: 100px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 20px;
+  font-weight: bold;
+
+}
+
+#rgb-area{
+  margin-top: 50px;
+  display: flex;
+  width: 200px !important;
+  text-align: center;
+  background-color: #f4f4f4;
+  border-radius: 20px;
+  padding: 5px;
+  padding-top: 8px;
+  font-family: monospace;
+  font-size: 20px;
+  margin-left: 40px;
+}
+
+p{
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Lobster';
+  padding-top: 100px;
+}
